@@ -42,25 +42,32 @@ console.log(mass)
 // 3. Найти есть ли в этом массиве число 3
 
 const array = [];
-
+let sum = 0;
 for (let i = 0; i < 5; i++) {
    array.push(Math.floor(Math.random() * 10))
-}
-console.log(array)
-let sum = 0;
-for (let i = 0; i < array.length; i++) {
-    const element = array[i];
-    sum = sum + array[i]
-}
-console.log(sum)
-for (let i = 0; i < array.length; i++) {
-    const element = array[i];
-    if (array[i] === 3) {
+   const element = array[i]
+   sum = sum + array[i]
+   if (array[i] === 3) {
         console.log(`Число 3 в массиве под индексом ${i}`)
     }else{
         continue
-    }
 }
+}
+console.log(array)
+// let sum = 0;
+// for (let i = 0; i < array.length; i++) {
+//     const element = array[i];
+    // sum = sum + array[i]
+// }
+console.log(`Сумма элементов массива = ${sum}`)
+// for (let i = 0; i < array.length; i++) {
+//     const element = array[i];
+//     if (array[i] === 3) {
+//         console.log(`Число 3 в массиве под индексом ${i}`)
+//     }else{
+//         continue
+//     }
+// }
 
 
 // Необходимо вывести горку в консоль (используя цикл for), как показано на рисунке, только у вашей горки должно быть 20 рядов, а не 5:
